@@ -66,6 +66,13 @@ app.get('/bad', (req, res) => {
 
 });
 
+app.get('/commit', (req, res) => {
+    res.send({
+        Messsage: 'Commit successful'
+    })
+
+});
+
 app.listen(port, () => {
     console.log('server is up and running' + port);
 });
